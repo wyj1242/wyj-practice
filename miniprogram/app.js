@@ -1,4 +1,5 @@
 //app.js
+import { promisifyAll } from 'miniprogram-api-promise';
 App({
   onLaunch: function () {
     
@@ -15,6 +16,10 @@ App({
       })
     }
 
-    this.globalData = {}
+    this.globalData = {};
+    const wxp = {};
+    promisifyAll(wx, wxp);
+    wxp.getSystemInfo().then(console.log)
+    // wxp.showModal().then(wxp.openSetting()
   }
 })

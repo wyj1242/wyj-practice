@@ -23,11 +23,11 @@
 		"nodeModules": true
 	},
 	"appid": "wx413eb457ef1b151e",
-	"projectname": "miniprogram1",
+	"projectname": "miniprogram",
 	"libVersion": "2.8.1",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
-	"compileType": "plugin",
+	"compileType": "miniprogram",
 	"condition": {
 		"search": {
 			"current": -1,
